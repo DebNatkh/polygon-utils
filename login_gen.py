@@ -23,4 +23,5 @@ if __name__ == "__main__":
     for name in open(filename, "r").readlines():
         name = name.strip().split()
         name, suranme = name[-1], " ".join(name[:-1])
+        print("login,password,name")
         print("b-2019-" + canonise(transliterate(suranme.lower())), genPassword(), name + " " + suranme, sep = ",") 
